@@ -1,0 +1,1 @@
+File per l'abstract $x \in \mathbb{R}$ con funzioni di matematica \[\sum_i  1\]

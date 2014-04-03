@@ -1,0 +1,56 @@
+\documentclass[10pt,oneside,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{anysize}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+
+\hypersetup{colorlinks, linkcolor=blue}
+
+\marginsize{2cm}{2cm}{3cm}{4cm}
+
+\theoremstyle{plain}% default
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposizione}
+\newtheorem{assi}[thm]{Assioma}
+\newtheorem{cor}{Corollario}
+\theoremstyle{definition}
+\newtheorem{defi}{Definizione}[section]
+\newtheorem{conj}{Congettura}[section]
+\newtheorem{exmp}{Esempio}[section]
+\theoremstyle{remark}
+\newtheorem{oss}{Osservazione}
+\newtheorem*{note}{Nota}
+\newtheorem*{case}{Caso}
+
+
+
+% Parti da cambiare per l'occasione
+\author{ Autore }
+\title{ Titolo }
+% Inserire l'abstract nel file abstract.txt
+
+\begin{document}
+\maketitle
+\vspace{1cm}
+\begin{abstract}
+\input{abstract.txt}
+\end{abstract}
+\vspace{1cm}
+\tableofcontents
+\newpage
+
+% Obbligatorio l'inserimento dei prerequisiti
+\section{PreRequisiti}
+
+
+\section{Start from here}
+
+\end{document}
