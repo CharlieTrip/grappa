@@ -2,3 +2,4 @@ name: Gruppo di Approfondimento Autogestito - Grappa
 markdown: kramdown
 pygments: true
 baseurl: /grappa
+permalink: none
