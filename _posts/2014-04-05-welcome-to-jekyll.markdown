@@ -1,24 +1,37 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+author: maker
+title:  "Minimum Fixed Point"
 date:   2014-04-05 17:58:02
-categories: jekyll update
+categories: random
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Questo post e' un mero esercizio di stile.
 
-Jekyll also offers powerful support for code snippets:
+Ogni futuro post dovrebbe avere il tag `talk`, e descrivera' il prossimo
+appuntamento del grappa approvato dal consiglio™.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+Dato che non sono molto bravo con questi tool per fighetti, dovro' sbattermi a
+mano per ogni incontro finche' non troveremo un automatismo per la pubblicazione.
+Pero' guardate che roba:
+
+{% highlight cpp %}
+int f(int x)
+{
+   return 0 || f(x) + 1;
+}
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+sarebbe piu' o meno come dire $$\mathbb{N}$$, o che so io:
+\\[ x = f(x) \\]
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
+Visualmente viene qualcosa del tipo:
+<div>
+  <img src="{{ site.baseurl }}/ouroboros.png"> </img>
+</div>
+
+Andate sulla fottuta [documentazione][jekyll] per maggiori informazioni.
+
+Ringrazio la biondina davanti a me qui al cial per l'ispirazione.  Saluti.
+
 [jekyll]:    http://jekyllrb.com

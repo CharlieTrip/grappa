@@ -14,11 +14,13 @@
 
     </head>
     <body>
-
+      <!-- XXX: oh fuck me, this shall be installed -->
+      <script type="text/javascript"
+              src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>.
         <div class="site">
           <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="{{ site.baseurl }}/">home</a>
+            <h1 class="title"><a href="{{ site.baseurl }}">{{ site.name }}</a></h1>
+            <!-- <a class="extra" href="{{ site.baseurl }}/">home</a> -->
           </div>
 
           {{ content }}
@@ -26,14 +28,17 @@
           <div class="footer">
             <div class="contact">
               <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
+                Random Grappa developers<br />
+                The Grappa Project<br />
+                grappa at fiesta.cc
               </p>
             </div>
             <div class="contact">
+              <img width="200px" src="{{ site.baseurl }}/kopimi.png" />
+            </div>
+            <div class="contact">
               <p>
-                <a href="https://github.com/unitn">github.com/yourusername</a><br />
+                <a href="https://github.com/unitn">github.com/unitn</a><br />
               </p>
             </div>
           </div>

@@ -1,4 +1,4 @@
-name: GRuppo di APProfondimento Autogestito
-markdown: redcarpet
+name: Gruppo di Approfondimento Autogestito - Grappa
+markdown: kramdown
 pygments: true
 baseurl: /grappa
