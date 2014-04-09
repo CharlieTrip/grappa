@@ -3,7 +3,17 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <p class="meta">
-  <small>from {{ page.author }}, on the {{ page.date | date_to_string }} </small>
+  <small>
+    from {{ page.author }}
+
+    {% if page.date %}
+    on {{ page.date | date: "%a, %B %-d at %H:%M" }}
+    {% endif %}
+
+    {% if page.location %}
+    at {{ page.location }}
+    {% endif %}
+  </small>
 </p>
 
 <div class="post">

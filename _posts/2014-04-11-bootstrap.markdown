@@ -2,15 +2,15 @@
 layout: post
 author: Riccardo Pedrotti
 title:  "Topology Groove (pt. I)"
-date:   2014-04-11 15:00:00
-location: Trento, Polo Ferrari, room A214
+date:   2014-04-11 15:00:00 +0200
+location: Povo1, room A214
 categories: talk topologia
 ---
 
 
-Questo appuntamento, della durata di due ore, intende lasciare al
-matematico-che-lavora qualche strumento di immediato utilizzo per affrontare i
-problemi topologici di tutti giorni.
+Questo appuntamento, della durata di due ore, intende lasciare al futuro
+matematico qualche strumento di immediato utilizzo per affrontare i problemi
+topologici di tutti giorni.
 
 In linea con lo spirito del GrAppA, questo talk non sarà un rimpiazzo delle
 lezioni di un qualsiasi corso di Topologia, ma invece si prefiggerà di mettere
@@ -47,7 +47,7 @@ spirito del gruppo, si dimostrerà ogni enunciato.
 Prequisiti
 ----------
 
-Cose che NON riprenderò: La "famosa" lezione di Topologia 0. Spenderò alcune
+Cose che NON riprenderò: la "famosa" lezione di Topologia 0. Spenderò alcune
 parole informali su di essa ma non di più.
 Alcune nozioni innocenti le darò per buone, ma assolutamente nulla di
 terrificante. In generale racconterò qualcosa di tutto quello
