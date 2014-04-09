@@ -3,3 +3,4 @@ markdown: kramdown
 pygments: true
 baseurl: /grappa
 permalink: none
+timezone: Europe/Rome
