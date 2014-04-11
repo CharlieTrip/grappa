@@ -20,7 +20,7 @@ oppure non dato il giusto peso.
 Per quanto riguarda l'impostazione dell'esposizione, seguirò il flow del
 [Munkres][munkres], con qualche iniezione di [Bourbaki][bourbaki] in modo da
 rendere il più vivo possibile la narrazione. Il giorno prima del seminario verrà
-distribuito il pdf con il programma dettagliato.
+distribuito [il pdf][dispense] con il programma dettagliato.
 
 Non sarà un Topologia lezione 0, ma piuttosto un laterale della stessa. Venite
 con questo spirito.
@@ -53,5 +53,7 @@ Alcune nozioni innocenti le darò per buone, ma assolutamente nulla di
 terrificante. In generale racconterò qualcosa di tutto quello
 che userò.
 
+
+[dispense]:       {{ site.baseurl }}/topgroove1.pdf
 [munkres]:        http://www.maths.ed.ac.uk/~aar/papers/munkres2.pdf
 [bourbaki]:       http://www.pdmi.ras.ru/~olegviro/topoman/part1.pdf
