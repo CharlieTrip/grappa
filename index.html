@@ -1,6 +1,6 @@
 ---
 layout: page
-title: dbyll
+title: GrAppA
 tagline:
 ---
 
@@ -47,14 +47,14 @@ tagline:
   {% if paginator.previous_page %}
     <li class="previous">
       {% if paginator.previous_page == 1 %}
-        <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+        <a href="{{ site.BASE_PATH }}/">&larr; Nuovi</a>
       {% else %}
-        <a href="{{ site.BASE_PATH }}/page{{ paginator.previous_page }}">&larr; Newer</a>
+        <a href="{{ site.BASE_PATH }}/page{{ paginator.previous_page }}">&larr; Nuovi</a>
       {% endif %}
     </li>
   {% else %}
     <li class="previous disabled">
-      <a>&larr; Newer</a>
+      <a>&larr; Nuovi</a>
     </li>
   {% endif %}
   
@@ -64,11 +64,11 @@ tagline:
 
   {% if paginator.next_page %}
     <li class="next">
-            <a href="{{ site.BASE_PATH }}/page{{ paginator.next_page }}">Older &rarr;</a>
+            <a href="{{ site.BASE_PATH }}/page{{ paginator.next_page }}">Vecchi &rarr;</a>
     </li>
   {% else %}
     <li class="next disabled">
-            <a>Older &rarr;</a>        
+            <a>Vecchi &rarr;</a>        
     </li>
   {% endif %}
 
