@@ -1,0 +1,8 @@
+---
+layout: post
+author: Gregorio Baldi, Nelvis Fornasin
+title:  "Topology Groove (pt. II)"
+date:   2014-04-15 17:00:00 +0200
+location: Povo1, room A215
+categories: talk topologia draft
+---
