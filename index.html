@@ -1,14 +1,21 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: GrAppA
 ---
+
 
 <div id="home">
   <h1>News: </h1>
   <ul class="posts">
-    {% for post in site.posts%}
+    {% for post in site.posts %}
+
+    {% if post.categories contains 'draft' %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; {{ post.title }} </li>
+    {% else %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo;
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+
     {% endfor %}
   </ul>
 </div>
