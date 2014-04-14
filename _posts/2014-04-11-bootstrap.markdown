@@ -53,7 +53,11 @@ Alcune nozioni innocenti le darò per buone, ma assolutamente nulla di
 terrificante. In generale racconterò qualcosa di tutto quello
 che userò.
 
+Downloads
+---------
 
-[dispense]:       {{ site.baseurl }}/topgroove1.pdf
+[Notes][dispense].
+
+[dispense]:       {{ site.pdfbaseurl }}/topgroove1.pdf
 [munkres]:        http://www.maths.ed.ac.uk/~aar/papers/munkres2.pdf
 [bourbaki]:       http://www.pdmi.ras.ru/~olegviro/topoman/part1.pdf

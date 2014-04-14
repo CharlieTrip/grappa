@@ -20,3 +20,12 @@ Prequisiti
 ----------
 La conoscenza del contenuto della scorsa presentazione non è obbligatoria ma
 rimane consigliato.
+
+
+Downloads
+---------
+[Part One Notes][dispense-nelvis]
+[Part Two Notes][dispense-greg]
+
+[dispense-nelvis]:      {{ site.pdfbaseurl }}/topgroove2.1.pdf
+[dispense-greg]:        {{ site.pdfbaseurl }}/topgroove2.2.pdf
