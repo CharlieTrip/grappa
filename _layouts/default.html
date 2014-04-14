@@ -1,53 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-
-    </head>
-    <body>
-      <!-- XXX: oh fuck me, this shall be installed -->
-      <script type="text/javascript"
-              src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>.
-        <div class="site">
-          <div class="header">
-            <center>
-            <h1 class="title">
-              <a href="{{ site.baseurl }}/">
-                <img height="150pt" src="{{ site.baseurl }}/grappa.png" />
-              </a>
-            </h1>
-            </center>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Random Grappa developers<br />
-                The Grappa Project<br />
-                grappa at fiesta.cc
-              </p>
-            </div>
-            <div class="contact">
-              <img width="150px" src="{{ site.baseurl }}/kopimi.png" />
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/unitn">github.com/unitn</a><br />
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
-</html>
+---
+theme :
+  name : dbyll
+---
+{% include default.html %}

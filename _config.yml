@@ -1,7 +1,20 @@
-name: Gruppo di Approfondimento Autogestito - Grappa
+name: Grappa
+description: Gruppo Approfondimento Autogestito
+author:
+  name: GrAppA
+  email: grappa@fiesta.cc
+  github: unitn
+  bio: Gruppo nato nel 2013 per riunire appassionati di Matematica e permettere a tutti di comunicare la loro idea.
+
+
 markdown: kramdown
 pygments: true
 baseurl: /grappa
 permalink: none
 timezone: Europe/Rome
 pdfbaseurl: http://distilleriacasamiro.altervista.org/
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+pygments: true
+rss_path: feed.xml
