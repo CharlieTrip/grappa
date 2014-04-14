@@ -1,0 +1,191 @@
+\documentclass[10pt,a4paper]{article}
+
+% Matematica
+\usepackage{amsmath,amsthm,amssymb,amsfonts, mathrsfs}
+% Accenti
+\usepackage[utf8]{inputenc}
+\usepackage[italian, english]{babel}
+% Altro
+\usepackage{anysize, hyperref}
+
+% Teoremi e simili
+\newtheoremstyle{icorollary}{}{}{}{}{\itshape}{.---}{0pt}{#1}
+\newtheoremstyle{numcorollary}{}{}{}{}{\itshape}{.}{ }{#1\if!#3!\else\ \fi\thmnote{#3}}
+\newtheoremstyle{idefinition}{}{}{}{}{\bfseries}{.---}{0pt}{}
+\newtheoremstyle{ilemma}{}{}{\itshape}{}{\bfseries}{.---}{0pt}{#1\if!#3!\else\ \fi\thmnote{#3}}
+\newtheoremstyle{iother}{}{}{\itshape}{}{\bfseries}{.---}{0pt}{\thmnote{#3}}
+\theoremstyle{ilemma}
+\newtheorem*{lemma}{Lemma}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{plain}
+\newtheorem*{proposition}{Proposizione}
+\theoremstyle{iother}
+\newtheorem{other}{}
+\theoremstyle{icorollary}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{numcorollary}
+\newtheorem{ncorollary}{Corollary}
+\theoremstyle{plain}
+\newtheorem*{definition}{Definizione}
+\newtheorem*{definitions}{Definizioni}
+\newtheorem*{defnorder}{Definition of Order}
+
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\title{Topology Groove (pt. II.1)}
+
+\begin{document}
+\maketitle
+
+Definiamo i connessi per contrasto:
+\begin{definitions}
+  Sia $(X,\mathcal T)$ spazio topologico, allora
+  \begin{itemize}
+  \item[(i)] Diciamo che $A,B\in\mathcal T$ costituiscono una \emph{separazione}
+    di $X$ se $A,B\neq\emptyset=A\cap B$, $A\cup B=X$;
+  \item[(ii)] Diciamo che $X$ \`e connesso se $\nexists A,B\in\mathcal T$ che
+    costituiscano una separazione.
+  \end{itemize}
+\end{definitions}
+Patologie: topologia discreta e topologia banale. Aperti nella topologia
+indotta.\newline
+Fatti utili:
+\begin{enumerate}
+\item $X$ \`e connesso se e solo se $X,\emptyset$ sono gli unici insiemi aperti
+  e chiusi in $(X,\mathcal T)$;
+\item $A,B\subset Y\subset (X,\mathcal T)$ costituiscono una separazione di $Y$
+  se e solo se $A,B\neq\emptyset=A\cap B$, $A\cup B=Y$ e nessuno dei due
+  contiene punti di accumulazione dell'altro.
+\end{enumerate}
+Come si fa a costruire connessi da connessi? Premettiamo un lemma.
+\begin{lemma}
+  Sia $(X,\mathcal T)$ spazio topologico, $\{A_i\}_{i\in I}$ una famiglia di
+  sottoinsiemi connessi di $X$. Allora
+  \begin{itemize}
+  \item[(i)] Se $A_j$, $A_k$ costituiscono una separazione di $X$, $A_l$
+    connesso $\Rightarrow$ $A_l$ \`e contenuto solo in uno dei due.
+  \item[(ii)] $\cap_{i\in I}\{A_i\}\neq\emptyset\Rightarrow \cup_{i\in
+      I}\{A_i\}$ connesso.
+  \end{itemize}
+\end{lemma}
+\begin{proof}[dim.] Ad (i). Consideriamo la topologia indotta su $A_l$ e
+  osserviamo che $A_j\cap A_l$ e $A_k\cap A_l$ sono aperti. Del resto sono
+  disgiunti, e uniti danno $A_k$: se uno dei due non fosse vuoto, ne
+  costituirebbero una separazione.\newline
+  Ad (ii), per assurdo. Fissato $p\in\cap_{i\in I}\{A_i\}$, separiamo
+  $\cup_{i\in I}\{A_i\}$ in $C$ e $D$. Non perdo di generalit\`a dicendo $p\in
+  C$, del resto $p\in A_i$ per ogni $i$, e gli $A_i$ sono connessi: il risultato
+  $(i)$ mi fa concludere $A_i\subset C\ \forall i$, allora $D=\emptyset$.
+\end{proof}
+Ecco due risultati interessanti:
+\begin{proposition} Siano $A,B\subset (X,\mathcal T)$, con $A$ connesso e
+$A\subset B\subset\bar A$. Allora $B$ \`e connesso.
+\end{proposition}
+\begin{proof}[dim.]
+  Per assurdo. Separiamo $B$ in $C$ e $D$, da $(i)$ del lemma concludiamo
+  $A\subset C$ senza perdita di generalit\`a, segue $\bar A\subset\bar C$, segue
+  $B\subset\bar C = C$, segue $B\cap D =\emptyset$.
+\end{proof}
+\begin{proposition}
+  Sia $f:X\to Y$ suriettiva e continua. Se $X$ \`e connesso, anche $Y$ lo \`e.
+\end{proposition}
+\begin{proof}
+  Per assurdo. Separiamo $Y$ in $A$ e $B$, per continuit\`a $f^{-1}(A)$ e
+  $f^{-1}(B)$ sono aperti, ed \`e immediato verificare $f^{-1}(A)\cap
+  f^{-1}(B)=\emptyset$; del resto per suriettivit\`a nessuno dei due \`e vuoto,
+  e uniti danno $X$.
+\end{proof} Da quest'ultima proposizione si evince che la connessione \`e una
+propriet\`a topologica.\newline \`E comodo introdurre un concetto di connessione
+per archi:
+\begin{definition}
+  Sia $(X, \mathcal T)$ spazio topologico. Dati $x$, $y\in X$ diciamo che esiste
+  un cammino che connette $x$ a $y$ se $\exists f:[a,b]\to X$ continua e tale
+  che $f(a)=x$, $f(b)=y$. Diciamo che $X$ \`e connesso per archi se questo vale
+  per qualsiasi coppia di punti di $X$.
+\end{definition} Tipico esempio (senza dimostrazione...) di insieme connesso ma
+non connesso per archi.\newline Topologia indotta da strumenti di misura e
+componenti connesse (per archi) di un insieme.
+\begin{definition}Sia $(X,\mathcal T)$ spazio topologico, allora $\forall x,y\in
+X$ diciamo
+  \begin{enumerate}
+  \item $x\sim y$ se $\exists Y\subset X$ che sia connesso e tale che $x$, $y\in
+  Y$;
+  \item $x\sim_a y$ se $\exists Y\subset X$ che sia connesso per archi e tale
+  che $x$, $y\in Y$;
+  \end{enumerate} sia $\sim$ che $\sim_a$ sono relazioni di equivalenza:
+  verificare riflessivit\`a, simmetria, e transitivit\`a. Per la transitivit\`a
+  di $\sim_a$ is utilizza il pasting lemma!
+\end{definition} Le classi di equivalenza date da $\sim$ e $\sim_a$ sono dette
+\emph{componenti} (arcate) dello spazio $X$.\newline Vale il seguente risultato:
+\begin{proposition}
+  Ogni componente $C$ di $X$ \`e un suo sottospazio connesso. Le componenti di
+  $X$ sono a due a due disgiunte e la loro unione \`e pari a $X$, inoltre ogni
+  altro sottospazio connesso di $X$ ($\neq\emptyset$) interseca una sola
+  componente.
+\end{proposition}
+\begin{proof}[dim.]
+  Che le componenti siano disgiunte discende direttamente dal fatto che sono
+  classi di equivalenza di $\sim$, per la stessa ragione osserviamo che la loro
+  unione deve essere $X$. L'ultima affermazione possiamo dimostrarla per
+  assurdo: se intersecasse pi\`u d'una componente saremmo in grado di prendere
+  un elemento $x_1$ dalla prima intersezione e un $x_2$ dalla seconda per
+  concludere $x_1\sim x_2$.\newline Per provare che ogni componente C \`e
+  connessa fissiamo $x\in C$ osserviamo che $\forall y_i\in C\exists Y_i\subset
+  X$ connesso, ma per quanto appena provato vale $Y_i\subset X$. Ne concludiamo
+  $C = \cup_{y_i\in C}Y_i$, e dal punto $(ii)$ del lemma segue la tesi.
+\end{proof}
+
+Come ultimo risultato si vorrebbe istituire una qualche relazione
+tra componenti e componenti arcate. Per farlo introduciamo una nozione di
+connessione locale:
+\begin{definition}
+  Uno spazio $X$ si dice localmente connesso (per archi) in $x\in X$ se per ogni
+  intorno $U$ di $x$ esiste un intorno $V\subset U$ di $x$ che sia connesso (per
+  archi). Se questo \`e vero $\forall x\in X$ diciamo che lo spazio \`e
+  localmente connesso (per archi).
+\end{definition}
+
+Nota: connessione e connessione locale sono concetti slegati. Esempi:
+$[-1,0)\cup(0,1]$, seno del topologo (quello di prima).
+
+C'\`e un criterio abbastanza comodo per determinare se uno spazio \`e localmente
+connesso:
+\begin{proposition}
+  Uno spazio $X$ \`e localmente connesso se e solo se per ogni aperto $U$ di $X$
+  ogni componente di $U$ \`e aperta.
+\end{proposition}
+\begin{proof}[dim.]
+  ($\Rightarrow$) Sia $U$ aperto in $X$, $C$ una componente di $U$ e $x\in
+  C$. Per locale connessione troviamo $V\subset U$ connesso e intorno di $x$;
+  per la proposizione precedente $V\subset C$. Allora $C$ \`e aperto, per
+  definizione.
+
+  ($\Leftarrow$) Sia $U\subset X$ intorno di qualche $x\in X$, consideriamo la
+  componente di $U$ che contiene $x$; tale componente \`e connessa, ed \`e
+  aperta per ipotesi (in $X$, dunque in $U$).
+\end{proof}
+
+La stessa proposizione, con ovvie modifiche, \`e valida per spazi
+localmente connessi.\newline Proviamo un ultimo risultato:
+\begin{proposition}
+  Sia $(X,\mathcal T)$ spazio topologico, allora ogni componente arcata di $X$
+  \`e contenuta in una sua componente (non arcata); se $X$ \`e localmente
+  connesso per archi, componenti e componenti arcate coincidono.
+\end{proposition}
+\begin{proof}[dim.]
+  La prima asserzione \`e evidente osservando che le componenti arcate sono
+  connesse (non dimostrato, ma del tutto analogo ad un risultato provato
+  poc'anzi), e in quanto tali contenute in una componente non arcata.\newline
+  Tale inclusione rimane vera anche nella situazione descritta nel secondo caso,
+  e ci rimane da dimostrare l'inclusione in senso opposto. Per dimostrarlo,
+  consideriamo una componente arcata $P\subset C$ e supponiamo per assurdo
+  $P\subsetneq C$; allora per ogni $x\in (C\setminus P)$ consideriamo la
+  componente arcata $Q_x\ :\ x\in Q_x$.\newline Vale evidentemente
+  $C=P\cup_{x\in C\setminus P}Q_x$, per locale connessione arcata tutte le $Q_x$
+  sono aperte, cos\`i come $P$: ma $C$ \`e connessa e $P\cap(\cup_{x\in
+  C\setminus P}Q_x)=\emptyset$ (verificare intuitivamente, vero per la prop.ne
+  non dimostrata), allora deve essere $\cup_{x\in C\setminus P}Q_x=\emptyset$.
+
+\end{proof}
+\end{document}
