@@ -4,3 +4,4 @@ pygments: true
 baseurl: /grappa
 permalink: none
 timezone: Europe/Rome
+pdfbaseurl: http://distilleriacasamiro.altervista.org/
