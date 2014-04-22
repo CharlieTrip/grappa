@@ -1,0 +1,8 @@
+---
+layout: post
+author: Marco Galvagni
+title:  "Topology Groove (pt. III)"
+date:   2014-04-29 00:00:00 +0200
+location: none
+categories: talk topologia draft
+---
