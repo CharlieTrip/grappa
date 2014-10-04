@@ -1,0 +1,15 @@
+---
+layout: post
+author: Nicola Bellumat
+title:  "Topology Groove (pt. IV)"
+date:   2014-05-06 16:00:00 +0200
+location: Povo1, room A220
+categories: talk topologia
+---
+
+### Downloads
+
+
+[Notes][notes]
+
+[notes]:        {{ site.pdfbaseurl }}/topgroove4.pdf

@@ -1,0 +1,89 @@
+---
+layout: post
+author: Marco Vergura
+title:  "Topology Groove (pt. V)"
+date:   2014-05-09 15:00:00 +0200
+location: Povo1, room A220
+categories: talk topologia
+---
+$$
+\newcommand{\cghaus}{\mathbf{CGHaus}}
+\newcommand{\chaus}{\mathbf{CHaus}}
+\newcommand{\tp}{\mathbf{Top}}
+\newcommand{\st}{\mathbf{Set}}
+\newcommand{\haus}{\mathbf{Haus}}
+$$
+Scopo di questo talk è quello di utilizzare il linguaggio categoriale per
+rivisitare costruzioni e definizioni che si danno *ipse dixit* in
+Topologia Generale, cercando di sondare il motivo, la domanda di senso che le
+sottende, e prendendo come punto di partenza le definizioni di prodotto e di
+unione disgiunta (coprodotto) tra spazi topologici. In tale cammino verso
+l' *aletheia*, lo strumento chiarificatore essenziale sarà la nozione di
+*aggiunzione*, pervasiva della Matematica tutta, di cui verranno
+sviluppati alcuni risultati fondamentali. I concetti introdotti saranno poi
+applicati ad una pletora di esempi topologici, alcuni maggiormente noti
+(quozienti e sottospazi topologici, compattificazione di Stone-Čech), altri più
+di nicchia (Kelleificazione), nel tentativo e nella speranza di affacciarsi con
+sguardo pregnante, anche se inevitabilmente parziale, all'approccio maieutico
+alla Matematica che la Teoria delle Categorie sa regalare al discepolo solerte.
+
+Prequisiti
+==========
+Nel corso del seminario, le seguenti nozioni saranno date per scontate quasi
+ovunque, (nel senso che potrebbero occasionalmente essere riprese).
+
+ - Prerequisiti Categoriali
+   - Categoria, Funtore (co- e contro-variante), Trasformazione Naturale.
+   - (Co)limite, (Co)prodotto, (Co)equalizzatore, (Co)completezza, Preservazione di (co)limiti da parte di funtori.
+ - Prerequisiti Topologici:
+   - Topologia, Chiusi, Aperti, Funzioni continue, Omeomorfismi.
+   - Sottospazi, Quozienti, Prodotti topologici.
+   - (Locale) Compattezza. Teorema di Tychonoff (solo enunciato).
+   - Spazi di Hausdorff e principali proprietà connesse.
+   - Assioma di primo-numerabilità.
+
+<br>
+
+Programma (di massima)
+======================
+
+ 1. Aggiunzioni. Unità e Counità. Caratterizzazione di aggiunzioni attraverso
+ unità e counità. Gli aggiunti in una direzione sono essenzialmente unici. Un
+ aggiunto sinistro (resp. destro) preserva i limiti (resp. i colimiti).
+ 2.  Categorie (co)slice. General Adjoint Functor Theorem. Categorie (co)riflessive. Categorie cartesiane chiuse.
+ 3.  Aggiunti al funtore dimenticante $$\tp\to\st$$ e ai suoi ovvi sollevamenti alle categorie slice e coslice.
+ 4.  Gli spazi compatti e di Hausdorff formano una categoria riflessiva
+ di $$\tp$$: la compattificazione di Stone-Čech.
+ 5.  Spazi compattamente generati. Gli spazi compattamente generati e di Hausdorff formano una categoria coriflessiva ($$\cghaus$$) di $$\haus$$: la Kelleificazione.
+ 6. $$\cghaus$$ è cartesiana chiusa.
+ 7.  Sospensione ridotta e spazio dei cappi di uno spazio topologico.
+
+
+<br>
+
+Bibliografia
+============
+  - Francis Borceaux, *Handbook of Categorical Algebra 1, Basic Category
+  Theory*,  Encyclopedia  of Mathematics and its Applications 50, Cambridge
+  University Press, Cambridge, 1994.
+  - Francis Borceaux, *Handbook of Categorical Algebra 2, Categories and
+  Structures* , Encyclopedia  of Mathematics and its Applications 50, Cambridge
+  University Press, Cambridge, 1994.
+ - James Dugundji, *Topology*, Allyn and Bacon, Inc., Boston, 1996.
+ - Taqdir Husain, *Topology and Maps*, Plenum Press, New York, 1977.
+ - Saunders Mac Lane, *Categories for the Working Mathematician*, Second
+ Edition, Graduate Texts in Mathematics, Springer-Verlag, New York, 1997.
+ - *Category Theory*, Stanford Encyclopedia of Philosophy, 6 Dicembre 1996.
+
+<br>
+
+Downloads
+=========
+
+[Curiosità][curiosity].
+[Prequisiti][preq].
+[Note][notes].
+
+[preq]:              {{ site.pdfbaseurl }}/Prerequisiti.pdf
+[curiosity]:         {{ site.pdfbaseurl }}/Curiosita.pdf
+[notes]:             {{ site.pdfbaseurl }}/aggiunzioni.pdf
